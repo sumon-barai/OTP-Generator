@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/switch.css" />
+  </head>
+  <body id="body" class="light-bg">
+    <section class="otp-section">
+      <div class="otp-container light-bg light-box-shadow" id="otp-container">
+        <h2>Our OTP code</h2>
+        <div class="otp-input-box-list" id="otp-input-box-list">
+          <input class="otp-input-item" type="text" maxlength="1" />
+          <input class="otp-input-item" type="text" maxlength="1" />
+          <input class="otp-input-item" type="text" maxlength="1" />
+          <input class="otp-input-item" type="text" maxlength="1" />
+        </div>
+        <div class="generated-otp" id="generated-otp">Loading...</div>
+        <div class="otp-validation success" id="otp-validation"></div>
+
+        <!-- switch -->
+        <div>
+          <div class="checkbox-wrapper-35 switch">
+            <input
+              value="private"
+              name="switch"
+              id="switch"
+              type="checkbox"
+              class="switch"
+            />
+            <label for="switch">
+              <span class="switch-x-text">This is </span>
+              <span class="switch-x-toggletext">
+                <span class="switch-x-unchecked"
+                  ><span class="switch-x-hiddenlabel">Unchecked: </span
+                  >light</span
+                >
+                <span class="switch-x-checked"
+                  ><span class="switch-x-hiddenlabel">Checked: </span>dark</span
+                >
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
